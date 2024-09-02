@@ -17,6 +17,10 @@ class Car {
 
   // Car movement function
   update() {
+    this.#move();
+  }
+
+  #move() {
     // go forward
     if (this.controls.forward) {
       this.speed += this.aceleration;
