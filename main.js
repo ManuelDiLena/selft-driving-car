@@ -12,7 +12,7 @@ animate();
 
 // Function to start the animation of the elements
 function animate() {
-  car.update();
+  car.update(road.borders);
   
   canvas.height = window.innerHeight;
 
