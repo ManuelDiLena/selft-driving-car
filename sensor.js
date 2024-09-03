@@ -1,4 +1,5 @@
 class Sensor {
+  // The sensor is built with its parameters
   constructor(car) {
     this.car = car;
     this.rayCount = 5;
@@ -19,6 +20,7 @@ class Sensor {
     }
   }
 
+  // Function for the sensor lines to detect when they touch the borders of the road
   #getReading(ray, roadBorders) {
     let touches = [];
     for (let i = 0; i < roadBorders.length; i++) {
@@ -42,6 +44,7 @@ class Sensor {
     }
   }
 
+  // Function to draw the sensor lines and their movements
   #castRays() {
     this.rays = [];
     for (let i = 0; i < this.rayCount; i++) {
