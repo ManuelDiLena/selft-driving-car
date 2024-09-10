@@ -34,7 +34,7 @@ class Road {
     ctx.strokeStyle = "white";
 
     // lane dividers are drawn
-    for (let i=1; i<=this.laneCount-1; i++) {
+    for (let i=1; i <= this.laneCount-1; i++) {
       const x = lerp(
         this.left,
         this.right,
